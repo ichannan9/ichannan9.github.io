@@ -69,9 +69,9 @@
       <!-- Home 끝 -->
 
       <!-- about 시작 -->
-      <section id="about">
-        <h2>차난</h2>
-        <p>
+      <section id="about" class="section max-container">
+        <h2 class="title">차난</h2>
+        <p class="description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
           rerum sunt. Nemo assumenda laboriosam eum? Accusantium adipisci
           commodi voluptatum, temporibus magnam fuga ab. Eligendi, iure debitis
@@ -80,31 +80,39 @@
           distinctio, dolorem et repellat consectetur eum aliquam veniam quaerat
           error fuga soluta doloremque placeat architecto ea.
         </p>
-        <ul>
-          <li><i class="fa-brrands fa-html5"></i></li>
-          <p>Front-end</p>
-          <p>HTML, CSS, JavaScript, Node.js, React</p>
-          <li class="fa-solid fa-mobile"></li>
-          <p>Mobile</p>
-          <p>Android, IOS, Kotlin, React-Native</p>
-          <li class="fa-solid fa-rocket"></li>
-          <p>AI</p>
-          <p>Tensorflow, Python, Pytorch, Numpy</p>
+        <ul class="skills">
+          <li class="skill">
+            <i class="fa-brands fa-html5 skill__icon"></i>
+
+            <p class="skill__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, Node.js, React</p>
+          </li>
+          <li class="skill">
+            <i class="fa-solid fa-mobile skill__icon"></i>
+
+            <p class="skill__title">Mobile</p>
+            <p>Android, IOS, Kotlin, React-Native</p>
+          </li>
+          <li class="skill">
+            <i class="fa-solid fa-rocket skill__icon"></i>
+            <p class="skill__title">AI</p>
+            <p>Tensorflow, Python, Pytorch, Numpy</p>
+          </li>
         </ul>
 
-        <ul>
-          <li>
-            <img src="./images/bi.jpg" alt="bi" />
+        <ul class="jobs">
+          <li class="job">
+            <img class="job__img" src="./images/bi.jpg" alt="bi" />
             <div>
-              <p>영업사원</p>
-              <p>2018~2020</p>
+              <p class="j0b__name">영업사원</p>
+              <p class="job__period">2018~2020</p>
             </div>
           </li>
-          <li>
-            <img src="./images/dog.jpg" alt="dog" />
+          <li class="job">
+            <img class="job__img" src="./images/dog.jpg" alt="dog" />
             <div>
-              <p>애견 유치원</p>
-              <p>2021~2023</p>
+              <p class="j0b__name">애견 유치원</p>
+              <p class="job__period">2021~2023</p>
             </div>
           </li>
         </ul>
@@ -112,61 +120,83 @@
       <!-- about 끝 -->
 
       <!-- skills 시작 -->
-      <section id="skills">
-        <h2>기술</h2>
-        <p>언어 및 도구</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
-          commodi saepe voluptatibus amet illum adipisci? Explicabo fugiat, vero
-          non fugit consequuntur laboriosam placeat et quod veniam,
-          necessitatibus ea saepe sequi?
-        </p>
-        <div>
-          <section>
-            <h3>언어</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>100%</span></div>
-                <div><div style="width: 100%"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>80%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>Java</span><span>70%</span></div>
-                <div><div style="width: 70%"></div></div>
-              </li>
-              <li>
-                <div><span>Python</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-            </ul>
-          </section>
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">기술</h2>
+          <p class="description">언어 및 도구</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+            commodi saepe voluptatibus amet illum adipisci? Explicabo fugiat,
+            vero non fugit consequuntur laboriosam placeat et quod veniam,
+            necessitatibus ea saepe sequi?
+          </p>
+          <div class="tools">
+            <section class="tools__coding">
+              <h3 class="tools__title">언어</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>100%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 100%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Java</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Python</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
-          <section>
-            <h3>도구</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Colab</li>
-              <li>Jupyter</li>
-              <li>Xcode</li>
-            </ul>
-          </section>
+            <section class="tools__tools">
+              <h3 class="tools__title">도구</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Colab</li>
+                <li>Jupyter</li>
+                <li>Xcode</li>
+              </ul>
+            </section>
 
-          <section>
-            <h3>기타</h3>
-            <ul>
-              <li>Git</li>
-              <li>SLACK</li>
-              <li>Math</li>
-            </ul>
-          </section>
+            <section class="tools__etc">
+              <h3 class="tools__title">기타</h3>
+              <ul>
+                <li>Git</li>
+                <li>SLACK</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
       <!-- skills 끝 -->
