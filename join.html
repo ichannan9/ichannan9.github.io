@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/join.css" />
+    <script src="./js/regist.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>회원 가입</h1>
+      <form action="/singup" method="post" onsubmit="return sendit()">
+        <div class="form-group">
+          <label for="userid">아이디</label>
+          <input
+            type="text"
+            maxlength="20"
+            name="userid"
+            id="userid"
+            placeholder="아이디를 입력하세요"
+          />
+        </div>
+        <div class="form-group">
+          <label for="userpw">비밀번호</label>
+          <input
+            type="password"
+            maxlength="20"
+            name="userpw"
+            id="userpw"
+            placeholder="비밀번호를 입력하세요"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="userpw_re">비밀번호 확인</label>
+          <input
+            type="password"
+            maxlength="20"
+            name="userpw_re"
+            id="userpw_re"
+            placeholder="비밀번호를 한번 더 입력해주세요."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input
+            type="email"
+            maxlength="100"
+            name="email"
+            id="email"
+            placeholder="이메일을 입력하세요"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input
+            type="text"
+            maxlength="10"
+            name="name"
+            id="name"
+            placeholder="이름을 입력하세요"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="hp">연락처</label>
+          <input
+            type="tel"
+            id="hp"
+            maxlength="20"
+            name="hp"
+            placeholder="01000000000"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="birth">주민등록번호</label>
+          <input type="text" name="ssn1" id="ssn1" maxlength="6" class="ssn" />
+          -
+          <input type="text" name="ssn2" id="ssn2" maxlength="7" class="ssn" />
+          <button onclick="validateSSN()" type="button">
+            주민등록번호 검증
+          </button>
+        </div>
+
+        <div class="form-group">
+          성별 |&nbsp;
+          <label
+            >남자<input type="radio" id="male" name="gender" checked
+          /></label>
+          <label
+            >여자<input type="radio" id="female" name="gender" value="여"
+          /></label>
+        </div>
+
+        <fieldset>
+          <legend>관심 분야</legend>
+          <label for="sports">운동</label>
+          <input type="checkbox" id="sports" name="interest" value="sports" />
+          <label for="movie">영화</label>
+          <input type="checkbox" id="movie" name="interest" value="movie" />
+          <label for="music">음악</label>
+          <input type="checkbox" id="music" name="interest" value="music" />
+          <label for="fashion">패션</label>
+          <input type="checkbox" id="fashion" name="interest" value="fashion" />
+          <label for="food">음식</label>
+          <input type="checkbox" id="food" name="interest" value="food" />
+          <label for="none">해당없음</label>
+          <input type="checkbox" id="none" name="interest" value="none" />
+        </fieldset>
+        <div class="form-group">
+          <label for="intro">자기소개</label>
+          <textarea
+            name="intro"
+            id="intro"
+            placeholder="간단한 자기소개를 작성해주세요."
+          ></textarea>
+        </div>
+
+        <button type="submit">가입하기</button>
+
+        <p class="footer-text">
+          이미 계정이 있으신가요? <a href="#">로그인</a>
+        </p>
+      </form>
+    </main>
+    <a href="#" class="fixed-button">help</a>
+  </body>
+</html>
