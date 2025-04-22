@@ -373,6 +373,7 @@ button:focus {
 
 /* arrow up */
 .arrow-up {
+  display: none;
   background-color: var(--color-primary);
   position: fixed;
   bottom: 3rem;
